@@ -1,0 +1,29 @@
+.main-nomination {
+    background: url(../img/bg-green.jpg) no-repeat;
+    background-size: cover;
+    padding: 58px 0;
+
+    &__title {
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 37px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .nomination-block {
+            margin-bottom: 30px;
+            margin-right: 30px;
+
+            &:nth-child(3n),
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

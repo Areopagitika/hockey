@@ -1,0 +1,84 @@
+@include font-face('Roboto Condensed', '../fonts/RobotoCondensed/RobotoCondensed-Light', 300, normal, $exts: woff2 woff ttf svg);
+@include font-face('Roboto Condensed', '../fonts/RobotoCondensed/RobotoCondensed-LightItalic', 300, italic, $exts: woff2 woff ttf svg);
+@include font-face('Roboto Condensed', '../fonts/RobotoCondensed/RobotoCondensed-Regular', normal, normal, $exts: woff2 woff ttf svg);
+@include font-face('Roboto Condensed', '../fonts/RobotoCondensed/RobotoCondensed-Italic', normal, italic, $exts: woff2 woff ttf svg);
+@include font-face('Roboto Condensed', '../fonts/RobotoCondensed/RobotoCondensed-Bold', bold, normal, $exts: woff2 woff ttf svg);
+@include font-face('Roboto Condensed', '../fonts/RobotoCondensed/RobotoCondensed-BoldItalic', bold, italic, $exts: woff2 woff ttf svg);
+
+html, body {
+    width: 100%;
+    height: 100%;
+    color: $color-brown-dark;
+    min-width: 1250px;
+}
+
+body {
+    &.fancybox-active {
+        overflow: hidden;
+    }
+
+    .fancybox-is-open .fancybox-bg {
+        opacity: 0.8;
+        background-color: #000;
+    }
+
+    .mCSB_scrollTools {
+        width: 7px;
+    }
+
+    .mCSB_scrollTools .mCSB_dragger,
+    .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+        background-color: #d9d9d9;
+    }
+
+    .mCSB_scrollTools .mCSB_dragger {
+        border-radius: 15px;
+    }
+
+    .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar { background-color: #d9d9d9; }
+
+	.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+    .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{ background-color: #d9d9d9; }
+
+    .mCSB_scrollTools .mCSB_draggerRail {
+        opacity: 0;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+.wrapp {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 0 21px;
+    width: 100%;
+    box-sizing: content-box;
+
+    /* @media screen and (max-width: 1212px) {
+        box-sizing: border-box;
+    } */
+}
+
+.btn-brown-style {
+    background: #c4ac89;
+    background: linear-gradient(to right, #c4ac89 0%,#e5dab7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4ac89', endColorstr='#e5dab7',GradientType=1 );
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(123,112,94,0.33);
+}
+
+.color-green {
+    color: $color-green;
+}
+
+.fancybox-active {
+    .wrapper {
+        .header,
+        .content,
+        .footer {
+            filter: blur(4px);
+        }
+    }
+}

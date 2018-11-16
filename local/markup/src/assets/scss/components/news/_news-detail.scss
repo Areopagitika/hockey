@@ -1,0 +1,23 @@
+.news-detail {
+
+    &__date {
+        color: $color-brown;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__content {
+        margin-bottom: 60px;
+
+        p {
+            color: #7f7f7f;
+            line-height: 28px;
+        }
+
+        img {
+            display: inline-block;
+            border-radius: 9px;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.contact-feedback-form {
+    padding: 24px 30px 30px 30px;
+    background-color: #fff;
+    box-shadow: 0 15px 27px 0 rgba(#818694, 0.21);
+    border-radius: 9px;
+
+    &__title {
+        font-size: 30px;
+        margin: 0 0 16px 0;
+    }
+
+    &__inputs {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 10px;
+
+        & > div {
+            width: 50%;
+
+            &:first-child {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    &__label {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    &__area {
+
+    }
+
+    &__btn {
+        font-weight: bold;
+        padding: 15px 40px;
+        font-size: 18px;
+        border-radius: 30px;
+        margin-top: 32px;
+        background-color: $color-brown;
+        color: #fff;
+        box-shadow: 0 10px 21px 1px rgba(#7b705e, 0.26);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        border: 1px solid #e8e8e8;
+        border-radius: 9px;
+        background-color: #fff;
+        font-size: 16px;
+        color: #7f7f7f;
+        padding: 12px 17px;
+        box-shadow: none;
+        transition: all 0.3s ease;
+        height: auto;
+        margin: 0;
+
+        &:focus {
+            box-shadow: 0 7px 16px 0 rgba(#818694, 0.18);
+        }
+    }
+
+    textarea {
+        height: 120px;
+        width: 100%;
+        resize: none;
+        box-sizing: border-box;
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "photo": {
+        "iconName": "photo",
+        "title": "Фото",
+        "allBtnText": "Все фото"
+    },
+    "video": {
+        "iconName": "video",
+        "title": "Видео",
+        "allBtnText": "Все видео"
+    }
+}

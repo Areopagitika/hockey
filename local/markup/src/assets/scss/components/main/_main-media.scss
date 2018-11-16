@@ -1,0 +1,90 @@
+.main-media {
+    padding: 32px 0 111px 0;
+    background: rgb(36, 32, 33);
+    background: linear-gradient(135deg, rgba(36, 32, 33, 1) 0%, rgba(43, 39, 40, 1) 50%, rgba(49, 45, 46, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#242021', endColorstr='#312d2e', GradientType=1);
+    position: relative;
+    overflow: hidden;
+
+    &__wrapp {
+        position: relative;
+    }
+
+    &__title {
+        text-align: center;
+        color: #ffffff;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        z-index: 2;
+        position: relative;
+
+        .main-media-photo {
+            width: 50%;
+        }
+
+        .main-media-video {
+            margin-right: 30px;
+            width: 50%;
+        }
+    }
+
+    &__decor {
+        position: absolute;
+
+        svg {
+            display: block;
+            position: absolute;
+        }
+
+        &--top {
+            top: 0;
+            right: 0;
+
+            .svg-round-decor-small {
+                right: -696px;
+                top: -530px;
+                transform: rotate(14deg);
+                stroke: #383536;
+                stroke-dasharray: 320, 240;
+                stroke-width: 80px;
+            }
+
+            .svg-round-decor-big {
+                right: -867px;
+                top: -701px;
+                transform: rotate(-19deg);
+                stroke: #383536;
+                stroke-dasharray: 320, 240;
+                stroke-width: 80px;
+            }
+        }
+
+        &--bottom {
+            left: 0;
+            bottom: 0;
+
+            .svg-round-decor-small {
+                left: -925px;
+                bottom: -603px;
+                transform: rotate(23deg);
+                stroke: #2e292a;
+                stroke-dasharray: 326, 153;
+                stroke-width: 80px;
+            }
+
+            .svg-round-decor-big {
+                width: 1321px;
+                height: 1322px;
+                left: -1117px;
+                bottom: -807px;
+                stroke: $color-brown;
+                stroke-dasharray: 326, 153;
+                stroke-width: 80px;
+            }
+        }
+    }
+}

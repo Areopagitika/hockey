@@ -1,0 +1,16 @@
+<div class="main-media-video">
+    <div class="main-media-video__top">
+        {{> main-media-info data=mediaInfo.video}}
+        <div class="main-media-video__play">
+            <a href="javascript:;" data-fancybox data-src="#slider-media--video" class="main-media-video__photo" style="background-image: url(assets/img/trash/video1.jpg);">
+                {{> media-round-video}}
+            </a>
+        </div>
+    </div>
+    <div class="main-media-video__bottom">
+        <a href="javascript:;" data-fancybox data-src="#slider-media--video" class="main-media-video__photo" style="background-image: url(assets/img/trash/video.jpg);">
+            {{> media-round-video}}
+        </a>
+    </div>
+</div>
+{{> slider-media type='video' title='Видео'}}

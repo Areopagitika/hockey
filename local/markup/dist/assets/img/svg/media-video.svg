@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 843.8 544">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: none;
+                stroke-miterlimit: 10;
+                stroke-width: 60px;
+            }
+        </style>
+    </defs>
+    <g id="Слой_2" data-name="Слой 2">
+        <g id="Layer_1" data-name="Layer 1">
+            <path class="cls-1" d="M489,514H131C75.4,514,30,468.5,30,413V131C30,75.5,75.4,30,131,30H489c55.5,0,101,45.5,101,101V413C590,468.5,544.5,514,489,514Z" />
+            <polygon class="cls-1" points="590 355.7 813.8 445.7 813.8 98.3 590 188.3 590 355.7" />
+            <line class="cls-1" x1="340" y1="355" x2="152" y2="355" />
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,25 @@
+.footer {
+    background-color: $bg-color-footer;
+    color: #fff;
+
+    &__wrapp {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+
+    &__content {
+        box-sizing: border-box;
+    }
+
+    &__copyright {
+        font-size: 15px;
+        padding-left: 4.3rem;
+        line-height: 1.6rem;
+    }
+
+    &__socials {
+        width: 31%;
+        padding-left: 30px;
+        text-align: center;
+    }
+}

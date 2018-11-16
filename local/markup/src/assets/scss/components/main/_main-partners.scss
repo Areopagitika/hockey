@@ -1,0 +1,37 @@
+.main-partners {
+    padding: 65px 0 119px 0;
+
+    &__wrapp {
+
+    }
+
+    &__title {
+        font-weight: bold;
+        text-align: center;
+        font-size: 60px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__link {
+        position: relative;
+        display: block;
+
+        -webkit-filter: grayscale(100%);
+        -webkit-filter: grayscale(1);
+        filter: grayscale(100%);
+
+        filter: url('../img/svg/gray.svg#grayscale');
+        filter: gray;
+
+        &:hover {
+            filter: none;
+            -webkit-filter: none;
+        }
+    }
+
+}

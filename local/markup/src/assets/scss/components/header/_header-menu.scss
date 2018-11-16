@@ -1,0 +1,40 @@
+.header-menu {
+
+    &__list {
+        justify-content: center;
+    }
+
+    &__item {
+        margin-right: 25px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @media screen and (max-width: $screen-xxlarge) {
+            margin-right: 15px;
+        }
+
+        @media screen and (max-width: 1300px) {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        font-weight: bold;
+        color: #fff;
+
+        &:focus {
+            color: #fff;
+        }
+
+        &.is-active,
+        &:hover {
+            color: #009268;
+        }
+
+        @media screen and (max-width: $screen-xlarge) {
+            padding: 0.7rem 0.8rem !important;
+        }
+    }
+}

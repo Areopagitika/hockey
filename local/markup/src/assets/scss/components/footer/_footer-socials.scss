@@ -1,0 +1,15 @@
+.footer-socials {
+    font-size: 21px;
+    margin-top: 13px;
+
+    a {
+        display: inline-block;
+        margin-right: 2px;
+        padding: 0 7px;
+        color: #fff;
+
+        &:hover {
+            color: #d52b1e;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.award-regulations {
+    padding: 30px 10px 30px 30px;
+    max-width: 1030px;
+    max-height: 496px;
+    height: 100%;
+    display: none;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 9px;
+    box-shadow: 0px 17px 73px 1px rgba(#020202, 0.46);
+
+    &__title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    &__content {
+        line-height: 28px;
+
+        p {
+            color: #7f7f7f;
+        }
+
+        h6 {
+            font-size: 26px;
+        }
+
+        b.color-green {
+            font-size: 20px;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        right: 0px;
+        top: 8px;
+        width: 30px;
+        height: 30px;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background-color: #d9d9d9;
+        }
+
+        &::before {
+            transform: rotate(45deg) translate(9px, -9px);
+        }
+
+        &::after {
+            transform: rotate(-45deg) translate(9px, 9px);
+        }
+    }
+}

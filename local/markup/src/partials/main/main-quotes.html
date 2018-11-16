@@ -1,0 +1,42 @@
+<div class="main-quotes">
+    <div class="wrapp main-quotes__wrapp">
+        <h3 class="title title--brown main-quotes__title">
+            Цитаты
+            <div class="title__line">
+                <img src="assets/img/svg/title-line.svg" alt="" class="svg-inject-me">
+            </div>
+        </h3>
+        <div class="main-quotes__items">
+            <div class="main-quotes__item">
+                {{> quote-block}}
+            </div>
+            <div class="main-quotes__item">
+                {{> quote-block}}
+            </div>
+            <div class="main-quotes__item">
+                {{> quote-block}}
+            </div>
+            <div class="main-quotes__item">
+                {{> quote-block}}
+            </div>
+            <div class="main-quotes__item">
+                {{> quote-block}}
+            </div>
+            <div class="main-quotes__item">
+                {{> quote-block}}
+            </div>
+            <div class="main-quotes__item">
+                {{> quote-block}}
+            </div>
+        </div>
+        <div class="main-quotes__slider">
+            <div class="slider js-quotes-slider" data-slider data-initial-start="0" data-end="5" data-changed-delay="200">
+                <span class="slider-handle" data-slider-handle role="slider" aria-controls="js-sliderQuoteOutput" tabindex="1"></span>
+                <span class="slider-fill" data-slider-fill></span>
+            </div>
+            <div class="hide">
+                <input type="number" id="js-sliderQuoteOutput">
+            </div>
+        </div>
+    </div>
+</div>

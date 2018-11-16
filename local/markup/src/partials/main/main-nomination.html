@@ -1,0 +1,15 @@
+<div class="main-nomination" id="scroll-nomination">
+    <div class="wrapp main-nomination__wrapp">
+        <h3 class="title title--white main-nomination__title">
+            Номинации
+            <div class="title__line">
+                <img src="assets/img/svg/title-line.svg" alt="" class="svg-inject-me">
+            </div>
+        </h3>
+        <div class="main-nomination__items">
+            {{#each nomination.items}}
+                {{> nomination-block data=this}}
+            {{/each}}
+        </div>
+    </div>
+</div>

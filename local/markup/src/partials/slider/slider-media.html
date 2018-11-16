@@ -1,0 +1,114 @@
+<div class="slider-media" id="slider-media--{{type}}">
+    <div class="slider-media__content">
+            <h5 class="slider-media__title">{{title}}</h5>
+            <button data-fancybox-close class="slider-media__close"></button>
+            <div class="slider-media__wrapp">
+                <div class="slider-media__big">
+                    <div class="slider-media__item">
+                        {{#ifequal type 'photo'}}
+                            <img src="assets/img/trash/news.jpg" alt="">
+                        {{/ifequal}}
+
+                        {{#ifequal type 'video'}}
+                            <video controls poster="assets/img/trash/news.jpg" preload="none">
+                                <source src="assets/video/example.mp4">
+                            </video>
+                        {{/ifequal}}
+                    </div>
+                    <div class="slider-media__item">
+                        {{#ifequal type 'photo'}}
+                            <img src="assets/img/trash/video.jpg" alt="">
+                        {{/ifequal}}
+
+                        {{#ifequal type 'video'}}
+                            <video controls poster="assets/img/trash/news.jpg" preload="none">
+                                <source src="assets/video/example.mp4">
+                            </video>
+                        {{/ifequal}}
+                    </div>
+                    <div class="slider-media__item">
+                        {{#ifequal type 'photo'}}
+                            <img src="assets/img/trash/video1.jpg" alt="">
+                        {{/ifequal}}
+
+                        {{#ifequal type 'video'}}
+                            <video controls poster="assets/img/trash/news.jpg" preload="none">
+                                <source src="assets/video/example.mp4">
+                            </video>
+                        {{/ifequal}}
+                    </div>
+                    <div class="slider-media__item">
+                        {{#ifequal type 'photo'}}
+                            <img src="assets/img/trash/video2.jpg" alt="">
+                        {{/ifequal}}
+
+                        {{#ifequal type 'video'}}
+                            <video controls poster="assets/img/trash/news.jpg" preload="none">
+                                <source src="assets/video/example.mp4">
+                            </video>
+                        {{/ifequal}}
+                    </div>
+                    <div class="slider-media__item">
+                        {{#ifequal type 'photo'}}
+                            <img src="assets/img/trash/video2.jpg" alt="">
+                        {{/ifequal}}
+
+                        {{#ifequal type 'video'}}
+                            <video controls poster="assets/img/trash/news.jpg" preload="none">
+                                <source src="assets/video/example.mp4">
+                            </video>
+                        {{/ifequal}}
+                    </div>
+                </div>
+                <div class="slider-media__thumbnails">
+                    <div class="slider-media__item">
+                        <div class="slider-media__thumbnail">
+                            <img src="assets/img/trash/news.jpg" alt="">
+                            {{#ifequal type 'video'}}
+                            {{> media-round-video}}
+                        {{/ifequal}}
+                        </div>
+                    </div>
+                    <div class="slider-media__item">
+                        <div class="slider-media__thumbnail">
+                            <img src="assets/img/trash/video.jpg" alt="">
+                            {{#ifequal type 'video'}}
+                            {{> media-round-video}}
+                        {{/ifequal}}
+                        </div>
+                    </div>
+                    <div class="slider-media__item">
+                        <div class="slider-media__thumbnail">
+                            <img src="assets/img/trash/video1.jpg" alt="">
+                            {{#ifequal type 'video'}}
+                            {{> media-round-video}}
+                        {{/ifequal}}
+                        </div>
+                    </div>
+                    <div class="slider-media__item">
+                        <div class="slider-media__thumbnail">
+                            <img src="assets/img/trash/video2.jpg" alt="">
+                            {{#ifequal type 'video'}}
+                            {{> media-round-video}}
+                        {{/ifequal}}
+                        </div>
+                    </div>
+                    <div class="slider-media__item">
+                        <div class="slider-media__thumbnail">
+                            <img src="assets/img/trash/video2.jpg" alt="">
+                            {{#ifequal type 'video'}}
+                            {{> media-round-video}}
+                        {{/ifequal}}
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="slider-media__btn slider-media__btn--right">
+                    <i class="fa fa-angle-right"></i>
+                </button>
+                <button type="submit" class="slider-media__btn slider-media__btn--left">
+                    <i class="fa fa-angle-left"></i>
+                </button>
+            </div>
+    </div>
+</div>

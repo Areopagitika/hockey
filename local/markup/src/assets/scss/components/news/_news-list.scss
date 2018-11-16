@@ -1,0 +1,15 @@
+.news-list {
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 60px;
+
+        .news-list-item {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.title {
+    position: relative;
+    font-size: 60px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    margin-bottom: 46px;
+
+    &__line {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        svg {
+            display: block;
+            fill: initial;
+        }
+
+        img {
+            display: block;
+        }
+    }
+
+    &--white {
+        svg {
+            fill: #ffffff;
+        }
+    }
+
+    &--green {
+        svg {
+            fill: $color-green;
+        }
+    }
+
+    &--brown {
+        svg {
+            fill: $color-brown;
+        }
+    }
+
+    &--left {
+        .title__line {
+            left: 0;
+            transform: none;
+        }
+    }
+
+    &--center {
+        text-align: center;
+    }
+}

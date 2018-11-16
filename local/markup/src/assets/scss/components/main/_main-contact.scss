@@ -1,0 +1,29 @@
+.main-contact {
+    padding: 64px 0 86px 0;
+    background-color: #f9f9fa;
+
+    &__wrapp {
+
+    }
+
+    &__title {
+        text-align: center;
+        color: $color-brown-dark;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    &__left {
+        width: 50%;
+        margin-right: 30px;
+    }
+
+    &__right {
+        width: 50%;
+    }
+
+}

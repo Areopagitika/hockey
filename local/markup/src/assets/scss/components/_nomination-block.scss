@@ -1,0 +1,129 @@
+.nomination-block {
+    background-color: #fff;
+    box-shadow: $shadow-round;
+    border-radius: 10px;
+    width: 370px;
+    height: 376px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    &__icon {
+        margin: 0 auto;
+        width: 90px;
+        height: 80px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url('../img/sprite/nomination.png');
+        }
+
+        &--best-junior::before {
+            @include responsiveSprite(0, 0, 114, 104, 402, 316);
+            width: 84px;
+            height: 78px;
+        }
+
+        &--best-lider::before {
+            @include responsiveSprite(0, 222, 90, 94, 402, 316);
+            width: 66px;
+            height: 72px;
+        }
+
+        &--best-player::before {
+            @include responsiveSprite(106, 109, 100, 108, 402, 316);
+            width: 74px;
+            height: 82px;
+        }
+
+        &--best-sniper::before {
+            @include responsiveSprite(0, 109, 101, 108, 402, 316);
+            width: 75px;
+            height: 82px;
+        }
+
+        &--best-tank::before {
+            @include responsiveSprite(95, 222, 90, 70, 402, 316);
+            width: 66px;
+            height: 54px;
+        }
+
+        &--gent-year::before {
+            @include responsiveSprite(359, 0, 43, 108, 402, 316);
+            width: 33px;
+            height: 82px;
+        }
+
+        &--hidden-player::before {
+            @include responsiveSprite(119, 0, 118, 98, 402, 316);
+            width: 86px;
+            height: 74px;
+        }
+    }
+
+    &__title {
+        font-weight: bold;
+        color: $color-green;
+        font-size: 30px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    &__desc {
+        color: #7c7c7c;
+        font-size: 14px;
+        margin: 0 auto;
+        line-height: 24px;
+    }
+
+    &__top {
+        width: 100%;
+    }
+
+    &__footer {
+        padding: 0 10px;
+        width: 100%;
+        height: 52px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__info {
+        font-size: 14px;
+        color: $color-brown;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-top: 1px solid #e8e8e8;
+        padding-top: 14px;
+        height: 53px;
+        width: 100%;
+    }
+
+    &__info-text {
+        text-align: left;
+    }
+
+    &__info-icon {
+        border-radius: 50%;
+        background-color: #d6d6d6;
+        color: #fff;
+        width: 21px;
+        height: 21px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        flex: 0 0 auto;
+    }
+}

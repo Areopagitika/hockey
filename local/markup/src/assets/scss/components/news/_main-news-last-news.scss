@@ -1,0 +1,63 @@
+.main-news-last-news {
+    position: relative;
+    min-height: 470px;
+
+    &__photo {
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+        height: 100%;
+        width: 100%;
+        min-height: 470px;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.85) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
+        }
+
+        img {
+            display: block;
+            position: relative;
+        }
+    }
+
+    &__info {
+        position: absolute;
+        bottom: 30px;
+        left: 40px;
+    }
+
+    &__date {
+        color: #ffffff;
+        background-color: $color-brown;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 2px 7px;
+        border-radius: 3px;
+        display: inline-block;
+        margin-bottom: 7px;
+    }
+
+    &__title {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 30px;
+        display: block;
+        line-height: 40px;
+
+        &:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+    }
+
+}

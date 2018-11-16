@@ -1,0 +1,62 @@
+.main-award-regulations {
+    height: 220px;
+    background: url(../img/bg-reglament.jpg) no-repeat;
+    background-size: cover;
+
+    &__wrapp {
+        text-align: center;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            bottom: 0;
+            background-image: url('../img/bg-reglament-payers.png');
+            background-repeat: no-repeat;
+            width: 363px;
+            height: 290px;
+        }
+    }
+
+    &__title {
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 60px;
+        padding-left: 28px;
+    }
+
+    &__button {
+        background-color: #ddd0ae;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 32px 15px 19px;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 22px;
+        margin-left: auto;
+        position: absolute;
+        right: 21px;
+        top: 50%;
+        transform: translate(0,-50%);
+    }
+
+    &__button-icon {
+        background-color: #bbb295;
+        border-radius: 50%;
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        margin-left: 30px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

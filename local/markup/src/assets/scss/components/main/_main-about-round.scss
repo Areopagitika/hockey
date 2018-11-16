@@ -1,0 +1,48 @@
+.main-about-round {
+    width: 285px;
+    height: 285px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: $shadow-round;
+    flex: 0 0 auto;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 222px;
+        height: 222px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url('../img/round.png');
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    &--logo {
+        margin-right: 35px;
+
+        &::after {
+            background-image: url('../img/logo_prize.png');
+            width: 194px;
+            height: 206px;
+            top: -5px;
+        }
+    }
+
+    &--prize {
+
+        &::after {
+            background-image: url('../img/prize.png');
+            width: 67px;
+            height: 201px;
+            top: -7px;
+        }
+    }
+}

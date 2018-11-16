@@ -1,0 +1,19 @@
+<form method="post" class="contact-feedback-form">
+    <h4 class="contact-feedback-form__title">Оставить заявку</h4>
+    <div class="contact-feedback-form__inputs">
+        <div>
+            <label for="contact-feedback-name" class="contact-feedback-form__label">Имя</label>
+            <input id="contact-feedback-name" name="name" type="text" maxlength="100" required>
+        </div>
+        <div>
+            <label for="contact-feedback-email" class="contact-feedback-form__label">Почта</label>
+            <input id="contact-feedback-email" name="email" type="email" maxlength="100" required>
+        </div>
+    </div>
+    <div class="contact-feedback-form__area">
+        <label for="contact-feedback-message" class="contact-feedback-form__label">Сообщение</label>
+        <textarea name="message" id="contact-feedback-message" required></textarea>
+    </div>
+
+    <button class="contact-feedback-form__btn">Отправить</button>
+</form>

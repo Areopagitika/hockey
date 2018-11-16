@@ -1,0 +1,71 @@
+.nominees-block {
+    padding: 35px 30px 30px 30px;
+    width: 370px;
+    box-sizing: border-box;
+    background-color: #fbf9f5;
+    box-shadow: 0 15px 27px 0 rgba(#818694, 0.21);
+    position: relative;
+    overflow: hidden;
+
+    &__top {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__photo {
+        border-radius: 50%;
+        width: 95px;
+        height: 95px;
+        overflow: hidden;
+        margin-right: 20px;
+        flex: 0 0 auto;
+        margin-bottom: 30px;
+
+        img {
+            display: block;
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__info {
+        font-weight: bold;
+    }
+
+    &__name {
+        font-size: 24px;
+        color: $color-brown-dark;
+    }
+
+    &__type {
+        font-size: 18px;
+        color: $color-brown;
+
+    }
+
+    &__content {
+        color: #7f7f7f;
+        font-size: 14px;
+        border-top: 1px solid #ebe7df;
+        padding-top: 25px;
+        position: relative;
+        line-height: 28px;
+        font-size: 16px;
+
+        b {
+            color: #2d2a2a;
+        }
+    }
+
+    &__star {
+        position: absolute;
+        content: '';
+        bottom: -67px;
+        right: -72px;
+        width: 233px;
+        height: 221px;
+        fill: #f4efe4;
+    }
+}

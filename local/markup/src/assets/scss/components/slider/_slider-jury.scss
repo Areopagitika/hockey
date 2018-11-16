@@ -1,0 +1,40 @@
+.slider-jury {
+    position: relative;
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__btn {
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        background-color: #f6f6f6;
+        color: $color-green;
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        opacity: 1;
+        transition: all 0.3s;
+
+        &--left {
+            left: -25px;
+        }
+
+        &--right {
+            right: -25px;
+        }
+
+        &.slick-disabled {
+            opacity: 0;
+        }
+    }
+
+    .slick-slide {
+        width: 25%;
+    }
+}
