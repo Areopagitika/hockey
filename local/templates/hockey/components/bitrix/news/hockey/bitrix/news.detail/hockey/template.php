@@ -49,7 +49,7 @@ $this->setFrameMode(true);
     <div class="news-next-prev__item">
         <? if(!empty($arResult['PREV'])): ?>
         <div class="news-next-prev__title">
-            Предыдущая новость
+          <?=GetMessage("PREV_NEWS_TITLE"); ?>
         </div>
         <div class="news-list-item">
             <div class="news-list-item__photo" style="background-image: url(<?=CFile::GetPath($arResult['PREV']['PREVIEW_PICTURE']); ?>);"></div>
@@ -63,7 +63,7 @@ $this->setFrameMode(true);
     <div class="news-next-prev__item">
         <? if(!empty($arResult['NEXT'])): ?>
         <div class="news-next-prev__title">
-            Следующая новость
+          <?=GetMessage("NEXT_NEWS_TITLE"); ?>
         </div>
         <div class="news-list-item">
 

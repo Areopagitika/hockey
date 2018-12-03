@@ -48,10 +48,9 @@ $APPLICATION->SetTitle("Статьи");
 					)
 					);?>
 				<!-- -->
-<!-- --><h1>Новости</h1>
 					<?$APPLICATION->IncludeComponent(
 						"bitrix:news.list",
-						"",
+						"main.news",
 						Array(
 							"DISPLAY_DATE" => "Y",
 							"DISPLAY_NAME" => "Y",

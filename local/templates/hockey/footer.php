@@ -5,8 +5,15 @@
     <div class="wrapp footer__wrapp">
         <div class="grid-x grid-padding-x footer__content">
             <div class="small-4 footer__copyright">
-                © Премия "Герои Хоккея"<br>
-                Все права защищены
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:main.include",
+                    "",
+                    Array(
+                        "AREA_FILE_SHOW" => "page",
+                        "AREA_FILE_SUFFIX" => "inc",
+                        "EDIT_TEMPLATE" => ""
+                    )
+                );?>
             </div>
             <div class="footer__socials">
                 <div class="footer-socials">
@@ -36,6 +43,5 @@
     </div>
 </div>
 </div>
-<script src="<?=SITE_TEMPLATE_PATH; ?>/js/app.js"></script>
 </body>
 </html>

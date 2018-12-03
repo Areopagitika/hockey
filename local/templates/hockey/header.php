@@ -1,4 +1,6 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<? use Bitrix\Main\Page\Asset; ?>
+<? $instAsst = Asset::getInstance(); ?>
 
 <!doctype html>
 <html class="no-js" lang="en">
@@ -7,8 +9,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport" content="width=1250, initial-scale=1">
-    <title>Главная | Foundation for Sites</title>
-    <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH; ?>/css/app.css">
+    <title><? $APPLICATION->ShowTitle()?></title>
+    <? $instAsst->addCss("/local/templates/hockey/css/app.css"); ?>
+    <? $instAsst->addJs("/local/templates/hockey/js/app.js"); ?>
 </head>
 <body class="main default">
 <? $APPLICATION->ShowPanel(); ?>
@@ -48,3 +51,15 @@
     </header>
 
     <div class="content">
+
+    <?$APPLICATION->IncludeComponent(
+      "bitrix:breadcrumb",
+      "hockey",
+      array(
+        "START_FROM" => "0",
+        "PATH" => "",
+        "SITE_ID" => "s1",
+        "COMPONENT_TEMPLATE" => "hockey"
+      ),
+      false
+    );?>
