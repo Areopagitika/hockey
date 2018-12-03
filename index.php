@@ -6,7 +6,7 @@ $APPLICATION->SetTitle("Статьи");
 ?>
 
 <!-- -->
-				<?$APPLICATION->IncludeComponent("bitrix:news.list", "articles", Array(
+				<?/*$APPLICATION->IncludeComponent("bitrix:news.list", "articles", Array(
 					"IBLOCK_TYPE"	=>	"articles",
 					"IBLOCK_ID"	=>	"2",
 					"NEWS_COUNT"	=>	"5",
@@ -46,7 +46,7 @@ $APPLICATION->SetTitle("Статьи");
 					"DISPLAY_PICTURE"	=>	"N",
 					"DISPLAY_PREVIEW_TEXT"	=>	"Y"
 					)
-					);?>
+					);*/ ?>
 				<!-- -->
 					<?$APPLICATION->IncludeComponent(
 						"bitrix:news.list",
