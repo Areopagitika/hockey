@@ -4,6 +4,61 @@ $APPLICATION->SetPageProperty("title", "Демонстрационная вер�
 $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 $APPLICATION->SetTitle("Статьи");
 ?>
+  
+  <div class="main-about-block" id="scroll-about">
+    <div class="main-about-block__decor">
+      <img src="<?=SITE_TEMPLATE_PATH; ?>/img/svg/round-decor-big.svg" alt="" class="svg-inject-me">
+      <img src="<?=SITE_TEMPLATE_PATH; ?>/img/svg/round-decor-small.svg" alt="" class="svg-inject-me">
+    </div>
+  
+    <?$APPLICATION->IncludeComponent(
+      "bitrix:main.include",
+      "",
+      array(
+        "AREA_FILE_SHOW" => "file",
+        "AREA_FILE_SUFFIX" => "",
+        "EDIT_TEMPLATE" => "",
+        "PATH" => "/local/include/main_premium_content.php"
+      ),
+      false
+    );?>
+    
+  </div>
+  
+  <div class="main-award-regulations" id="scroll-regulations">
+    <div class="wrapp main-award-regulations__wrapp">
+      <h3 class="main-award-regulations__title">Регламент премии</h3>
+      <button data-src="#award-regulations" class="btn-brown-style main-award-regulations__button">
+        Ознакомиться
+        <span class="main-award-regulations__button-icon">
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </span>
+      </button>
+    </div>
+  </div>
+  
+  <div class="award-regulations" id="award-regulations">
+    <h5 class="title title--green award-regulations__title">
+      Регламент премии «Герои Хоккея»
+      <div class="title__line">
+        <img src="<?=SITE_TEMPLATE_PATH; ?>/img/svg/title-line.svg" alt="" class="svg-inject-me">
+      </div>
+    </h5>
+    <div class="award-regulations__content">
+      <?$APPLICATION->IncludeComponent(
+        "bitrix:main.include",
+        "",
+        array(
+          "AREA_FILE_SHOW" => "file",
+          "AREA_FILE_SUFFIX" => "",
+          "EDIT_TEMPLATE" => "",
+          "PATH" => "/local/include/main_premium_popup.php"
+        ),
+        false
+      );?>
+    </div>
+    <button data-fancybox-close class="award-regulations__close"></button>
+  </div>
 
 <!-- -->
 				<?/*$APPLICATION->IncludeComponent("bitrix:news.list", "articles", Array(
@@ -122,6 +177,85 @@ $APPLICATION->SetTitle("Статьи");
 	),
 false
 );?>
+  
+  <div class="main-contact" id="scroll-contacts">
+    <div class="wrapp main-contact__wrapp">
+      <h3 class="title title--green main-contact__title">
+        Контакты
+        <div class="title__line">
+          <img src="<?=SITE_TEMPLATE_PATH; ?>/img/svg/title-line.svg" alt="" class="svg-inject-me">
+        </div>
+      </h3>
+      <div class="main-contact__content">
+        <div class="main-contact__left">
+          <div class="contact-info">
+            <div class="contact-info__logo">
+              <img src="<?=SITE_TEMPLATE_PATH; ?>/img/svg/hokey-federation-color.svg" alt="Федерация Хоккея России" class="svg-inject-me">
+            </div>
+            <h4 class="contact-info__title">Пресс-центр<br> Федерации Хоккея России</h4>
+            
+            <div class="contact-info__content">
+              <div class="contact-info__mail">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <a class="" href="mailto:media@fhr.ru">media@fhr.ru</a>
+              </div>
+              
+              <div class="contact-info__phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <?$APPLICATION->IncludeComponent(
+                  "bitrix:main.include",
+                  "",
+                  array(
+                    "AREA_FILE_SHOW" => "file",
+                    "AREA_FILE_SUFFIX" => "",
+                    "EDIT_TEMPLATE" => "",
+                    "PATH" => "/local/include/main_contact_phone.php"
+                  ),
+                  false
+                );?>
+              </div>
+              
+              <div class="contact-info__address">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <?$APPLICATION->IncludeComponent(
+                  "bitrix:main.include",
+                  "",
+                  array(
+                    "AREA_FILE_SHOW" => "file",
+                    "AREA_FILE_SUFFIX" => "",
+                    "EDIT_TEMPLATE" => "",
+                    "PATH" => "/local/include/main_contact_address.php"
+                  ),
+                  false
+                );?>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-contact__right">
+          <form method="post" class="contact-feedback-form">
+            <h4 class="contact-feedback-form__title">Оставить заявку</h4>
+            <div class="contact-feedback-form__inputs">
+              <div>
+                <label for="contact-feedback-name" class="contact-feedback-form__label">Имя</label>
+                <input id="contact-feedback-name" name="name" type="text" maxlength="100" required>
+              </div>
+              <div>
+                <label for="contact-feedback-email" class="contact-feedback-form__label">Почта</label>
+                <input id="contact-feedback-email" name="email" type="email" maxlength="100" required>
+              </div>
+            </div>
+            <div class="contact-feedback-form__area">
+              <label for="contact-feedback-message" class="contact-feedback-form__label">Сообщение</label>
+              <textarea name="message" id="contact-feedback-message" required></textarea>
+            </div>
+            
+            <button class="contact-feedback-form__btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <!-- --><!-- -->
 

@@ -6,13 +6,15 @@
         <div class="grid-x grid-padding-x footer__content">
             <div class="small-4 footer__copyright">
                 <?$APPLICATION->IncludeComponent(
-                    "bitrix:main.include",
-                    "",
-                    Array(
-                        "AREA_FILE_SHOW" => "page",
-                        "AREA_FILE_SUFFIX" => "inc",
-                        "EDIT_TEMPLATE" => ""
-                    )
+                  "bitrix:main.include",
+                  "",
+                  array(
+                    "AREA_FILE_SHOW" => "file",
+                    "AREA_FILE_SUFFIX" => "",
+                    "EDIT_TEMPLATE" => "",
+                    "PATH" => "/local/include/footer_copyright.php"
+                  ),
+                  false
                 );?>
             </div>
             <div class="footer__socials">
@@ -37,11 +39,22 @@
                     </a>
                 </div>            </div>
             <div class="small-4">
-                При использовании материалов ссылка на сайт официальный сайт Федерации Хоккея России обязательна
+              <?$APPLICATION->IncludeComponent(
+                "bitrix:main.include",
+                "",
+                array(
+                  "AREA_FILE_SHOW" => "file",
+                  "AREA_FILE_SUFFIX" => "",
+                  "EDIT_TEMPLATE" => "",
+                  "PATH" => "/local/include/footer_copyright_content.php"
+                ),
+                false
+              );?>
             </div>
         </div>
     </div>
 </div>
 </div>
+<? $instAsst->addJs("/local/templates/hockey/js/app.js"); ?>
 </body>
 </html>
