@@ -28,19 +28,19 @@
                     </a>
                 </div>
                 <div class="header__menu">
-                    <nav class="header-menu">
-                        <ul class="vertical medium-horizontal menu header-menu__list">
-                            <li class="header-menu__item"><a href="#scroll-about" class="header-menu__link">О премии</a></li>
-                            <li class="header-menu__item"><a href="#scroll-regulations" class="header-menu__link">Регламент</a></li>
-                            <li class="header-menu__item"><a href="#scroll-jury" class="header-menu__link">Жюри</a></li>
-                            <li class="header-menu__item"><a href="#scroll-nomination" class="header-menu__link">Номинации</a></li>
-                            <li class="header-menu__item"><a href="#scroll-nominees" class="header-menu__link">Лауреаты</a></li>
-                            <li class="header-menu__item"><a href="#scroll-news" class="header-menu__link">Новости</a></li>
-                            <li class="header-menu__item"><a href="#scroll-media" class="header-menu__link">Медия</a></li>
-                            <li class="header-menu__item"><a href="#scroll-contacts" class="header-menu__link">Контакты</a></li>
-                            <li class="header-menu__item"><a href="#scroll-partners" class="header-menu__link">Партнеры</a></li>
-                        </ul>
-                    </nav>
+                  <?$APPLICATION->IncludeComponent("bitrix:menu","main_menu",Array(
+                      "ROOT_MENU_TYPE" => "top",
+                      "MAX_LEVEL" => "1",
+                      "CHILD_MENU_TYPE" => "top",
+                      "USE_EXT" => "Y",
+                      "DELAY" => "N",
+                      "ALLOW_MULTI_SELECT" => "Y",
+                      "MENU_CACHE_TYPE" => "N",
+                      "MENU_CACHE_TIME" => "3600",
+                      "MENU_CACHE_USE_GROUPS" => "Y",
+                      "MENU_CACHE_GET_VARS" => ""
+                    )
+                  );?>
                 </div>
             </div>
         </div>
